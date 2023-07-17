@@ -283,7 +283,8 @@
       }
     }
   };
-  const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+  // 与 46 行重复
+  // const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
   var watermarkDom = new MutationObserver(callback);
   var option = {
     'childList': true,
